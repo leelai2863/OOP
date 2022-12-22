@@ -1,0 +1,35 @@
+package Interface_btLop;
+
+public class main {
+	
+	public static void sapXep(RectanglePlus[] arr) {
+		int z;
+		for(int i = 1; i < arr.length; i++) {
+			if( arr[i].getArea() < arr[z].getArea()) {
+				RectanglePlus index;
+				index = arr[z];
+				arr[z] = arr[i];
+				arr[i]= index;
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		Point p1 = new Point(3, 5);
+		Point p2 = new Point(2, 4);
+		Point p3 = new Point(4, 6);
+		
+		RectanglePlus p = new RectanglePlus(p1, 4, 6);
+		
+		System.out.println(p.getArea());
+		System.out.println(p.isLargerThan(p));
+		
+		RectanglePlus[] arr = new RectanglePlus[3];
+		arr[0] = new RectanglePlus(p1, 3, 5);
+		arr[1] = new RectanglePlus(p1, 2, 4);
+		arr[2] = new RectanglePlus(p1, 1, 1);
+		
+		
+	}
+
+}

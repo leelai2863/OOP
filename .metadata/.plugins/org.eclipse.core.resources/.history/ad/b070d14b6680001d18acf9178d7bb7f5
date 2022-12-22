@@ -1,0 +1,52 @@
+package QuanLyCuaHang;
+
+public class MON {
+	String tenMon;
+	int gia;
+	String dvt;
+	int soluong;
+	public MON() {
+		soluong = 1;
+	}
+	public getIntance(Mon mon) {
+		if(mon==null) {
+			return new mon;
+		}
+		return this;
+	}
+	public MON(String tM, int g, String DVT, int soluong) {
+		tenMon = tM;
+		gia = g;
+		dvt = DVT;
+		this.soluong = soluong;
+	}
+	public String getTenMon() {
+		return tenMon;
+	}
+	public int getGia() {
+		return gia*soluong;
+	}
+	public String getDvt() {
+		return dvt;
+	}
+	public int getSoluong() {
+		return soluong;
+	}
+	public void setTenMon(String tenMon) {
+		this.tenMon = tenMon;
+	}
+	public void setGia(int gia) {
+		this.gia = gia;
+	}
+	public void setDvt(String dvt) {
+		this.dvt = dvt;
+	}
+	public void setSoluong(int soluong) {
+		this.soluong = soluong;
+	}
+	@Override
+	public String toString() {
+		return "\nMón [tên món=" + tenMon + ", giá=" + getGia() + ", dvt=" + dvt + ", số lượng="+ soluong + "]";
+	}
+	
+}

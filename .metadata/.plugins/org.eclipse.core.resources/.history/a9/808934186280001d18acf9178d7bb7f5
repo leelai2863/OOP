@@ -1,0 +1,27 @@
+package QuanLyCuaHang;
+
+public class MON {
+	String tenMon;
+	int gia;
+	String dvt;
+	
+	public MON(String tenMOn, int gia, String dvt) {
+		this.tenMon = tenMOn;
+		this.gia = gia;
+		this.dvt = dvt;
+	}
+	public String getTenMon() {
+		return this.tenMon;
+	}
+	public int getgia() {
+		return gia;
+	}
+	public String getdvt() {
+		return dvt;
+	}
+	@Override
+	public String toString() {
+		return "MON [Tên món: " + tenMon + ", giá=" + gia + ", dvt=" + dvt + "]";
+	}
+	
+}

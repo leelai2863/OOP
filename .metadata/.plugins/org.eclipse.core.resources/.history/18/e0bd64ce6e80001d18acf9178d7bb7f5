@@ -1,0 +1,10 @@
+package QuanLyCuaHang;
+
+public class Service {
+	public  void openStore() {
+		int luaChon;
+		while(true) {
+			luaChon=getLuaChon();
+		}
+	}
+}

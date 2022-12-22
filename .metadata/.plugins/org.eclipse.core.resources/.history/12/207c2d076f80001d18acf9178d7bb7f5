@@ -1,0 +1,18 @@
+package QuanLyCuaHang;
+
+import java.util.Scanner;
+
+public class Service {
+	public  void openStore() {
+		int luaChon;
+		while(true) {
+			luaChon=getLuaChon();
+		}
+	}
+	public int getLuaChon() {
+		System.out.println("1.Goi Mon \n 2.Them Mon \n 3.Kiem Tra Cho Ngoi \n 4.In bill");
+		int luaChon=new Scanner(System.in).nextInt();
+	
+	}
+}
+

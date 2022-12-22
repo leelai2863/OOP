@@ -1,0 +1,19 @@
+package QuanLyCuaHang;
+import java.util.Date;
+
+public class test {
+
+	public static void main(String[] args) {
+		PHO[] p = new PHO[5];
+		MON[] m = new MON[5];
+		m[1] = new MON("tái-nạm-gân", 60000, "tô lớn");
+		Date today = new Date();
+		String[] thit = {"tái", "nạm", "gân"};
+		
+		
+		System.out.println(m[1]);
+		
+		
+	}
+
+}

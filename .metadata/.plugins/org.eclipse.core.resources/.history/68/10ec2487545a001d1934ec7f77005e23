@@ -1,0 +1,11 @@
+package Interface_btLop;
+
+public class main {
+
+	public static void main(String[] args) {
+		RectanglePlus p = new RectanglePlus(4, 6);
+		
+		System.out.println(p.getArea());
+	}
+
+}

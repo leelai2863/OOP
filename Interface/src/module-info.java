@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author laile
+ *
+ */
+module Interface {
+}

@@ -1,0 +1,14 @@
+package QuanLyCuaHang;
+
+public class Service {
+	public  void openStore() {
+		int luaChon;
+		while(true) {
+			luaChon=getLuaChon();
+		}
+	}
+	public int getLuaChon() {
+		System.out.println("1.Goi Mon");
+	}
+}
+

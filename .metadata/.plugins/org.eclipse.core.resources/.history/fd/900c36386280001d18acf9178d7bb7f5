@@ -1,0 +1,30 @@
+package QuanLyCuaHang;
+
+import java.util.Arrays;
+
+public class PHO extends MON{
+	int loai;
+	String[] thit = new String[loai];
+	
+	public PHO(String tenMOn, int gia, String dvt, int loai, String[] thit) {
+		super(tenMOn, gia, dvt);
+		this.loai = loai;
+		this.thit = thit;
+	}
+	public int getloai() {
+		return loai;
+	}
+	public int getgia() {
+		if(loai == 0)
+		{
+			System.out.println("khong co hoa don");
+		}
+		return super.getgia();
+	}
+	
+	@Override
+	public String toString() {
+		return "PHO [Loại=" + loai + " \n " + ", thịt=" + Arrays.toString(thit) + "]";
+	}
+	
+}

@@ -1,0 +1,35 @@
+package QuanLyCuaHang;
+import java.util.Date;
+import java.util.Arrays;
+
+public class HOADON {
+	MON[] mon;
+	int soban;
+	String nv1, nv2;
+	Date thoigian;
+	String maHD;
+	
+	public HOADON(MON[] mon, int soban, String nv1, String nv2, Date thoigian, String maHD, int tongTien) {
+		this.mon = mon;
+		this.soban = soban;
+		this.nv1 = nv1;
+		this.nv2 = nv2;
+		this.thoigian = thoigian;
+		this.maHD = maHD;
+	}
+	
+	public int tongtien() {
+		int temp = 0;
+		for(int i = 0; i < mon.length; i++ ) {
+			temp += mon[i].getgia();
+		}
+		return temp;
+	}
+
+	@Override
+	public String toString() {
+		return "HOADON " + "\n Mon: " + Arrays.toString(mon) + " \n " + "Số Bàn: " + soban + " \n " + " Nhân viên 1:" + nv1 + " \n " 
+				+ "Nhân viên 2:" + nv2 + " \n " + "Thời gian: " + thoigian + " \n " + "Mã hóa đơn: " + maHD + "]";
+	}
+	
+}

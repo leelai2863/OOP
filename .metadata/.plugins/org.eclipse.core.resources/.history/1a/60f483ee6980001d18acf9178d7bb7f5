@@ -1,0 +1,21 @@
+package QuanLyCuaHang;
+import java.util.Date;
+
+public class test {
+
+	public static void main(String[] args) {
+		// tái - nạm - gầu - gân - bò vò viên
+		
+		Date today = new Date();
+		String[] thit = {"tái", "gân", "nạm"};
+		PHO order1 = new PHO(thit.length, thit, 2);
+		MON[] order = new MON[3];
+		order[0] = order1;
+		order[1] = new MON("Thịt thêm", 25000, "chén", 1);
+		order[2] = new MON("quẩy", 5000, "cái", 1);
+		HOADON hd1 = new HOADON(order, 1, "nv01", "nv02", today, "hd01");
+		//hd1.themMon(new MON("Tiết", 10000, "chén", 15));
+		//hd1.themMon(order[0], 1);
+		System.out.println(hd1);
+	}
+}

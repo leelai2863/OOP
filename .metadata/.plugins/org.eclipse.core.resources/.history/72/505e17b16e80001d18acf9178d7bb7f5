@@ -1,0 +1,7 @@
+package QuanLyCuaHang;
+
+public class Service {
+	public  void openStore() {
+		
+	}
+}

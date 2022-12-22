@@ -1,0 +1,14 @@
+package Interface_btLop;
+
+public class main {
+
+	public static void main(String[] args) {
+		Point p1 = new Point(3, 5);
+		
+		RectanglePlus p = new RectanglePlus(p1, 4, 6);
+		
+		System.out.println(p.getArea());
+		System.out.println(p.isLargerThan(p));
+	}
+
+}
